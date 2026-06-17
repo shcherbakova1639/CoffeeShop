@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoffeeShop — Меню</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">Coffee<span>Shop</span></a>
+            
+            <button class="burger-btn" id="burgerBtn" aria-label="Відкрити меню">
+                <span class="burger-bar bar1"></span>
+                <span class="burger-bar bar2"></span>
+                <span class="burger-bar bar3"></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Головна</a></li>
+                <li><a href="menu.html" class="nav-link active">Меню</a></li>
+                <li><a href="index.html#order" class="nav-link">Замовлення</a></li>
+                <li><a href="index.html#contacts" class="nav-link">Контакти</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main style="padding-top: 4rem;">
+        <div class="container">
+            <h2 class="section-title">Наше Меню</h2>
+            
+            <div class="menu-grid">
+                <article class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=400" alt="Капучино" class="card-img">
+                    <div class="card-content">
+                        <div class="card-title">
+                            <span>Капучино</span>
+                            <span class="card-price">55 ₴</span>
+                        </div>
+                        <p class="card-desc">Класичний кавовий напій з пишною молочною пінкою на основі подвійного еспресо.</p>
+                        <button class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">В кошик</button>
+                    </div>
+                </article>
+
+                <article class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=400" alt="Лате" class="card-img">
+                    <div class="card-content">
+                        <div class="card-title">
+                            <span>Лате Макіато</span>
+                            <span class="card-price">60 ₴</span>
+                        </div>
+                        <p class="card-desc">Ніжний молочний смак з легким відтінком добірного кавового зерна арабіки.</p>
+                        <button class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">В кошик</button>
+                    </div>
+                </article>
+
+                <article class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1607958996333-41aef7caefaa?q=80&w=400" alt="Круасан" class="card-img">
+                    <div class="card-content">
+                        <div class="card-title">
+                            <span>Круасан з мигдалем</span>
+                            <span class="card-price">65 ₴</span>
+                        </div>
+                        <p class="card-desc">Хрустка французька випічка з ніжною мигдалевою начинкою всередині.</p>
+                        <button class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">В кошик</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-bottom" style="border: none; padding: 0;">
+            <p>&copy; 2026 CoffeeShop</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

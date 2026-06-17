@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoffeeShop — Головна</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">Coffee<span>Shop</span></a>
+            
+            <button class="burger-btn" id="burgerBtn" aria-label="Відкрити меню">
+                <span class="burger-bar bar1"></span>
+                <span class="burger-bar bar2"></span>
+                <span class="burger-bar bar3"></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Головна</a></li>
+                <li><a href="menu.html" class="nav-link">Меню</a></li>
+                <li><a href="#order" class="nav-link">Замовлення</a></li>
+                <li><a href="#contacts" class="nav-link">Контакти</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h1>Твоя ідеальна кава чекає на тебе</h1>
+                <p>Замовляй онлайн заздалегідь та забирай без черги дорогою на навчання чи роботу.</p>
+                <a href="menu.html" class="btn">Перейти до Меню</a>
+            </section>
+
+            <section id="order" class="order-section">
+                <h2 class="section-title" style="margin-bottom: 1.5rem;">Швидке передзамовлення</h2>
+                <form id="coffeeForm">
+                    <div class="form-group">
+                        <label for="name">Ваше ім'я</label>
+                        <input type="text" id="name" class="form-control" placeholder="Введіть ім'я" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Номер телефону</label>
+                        <input type="tel" id="phone" class="form-control" placeholder="+380" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Бажаний час отримання</label>
+                        <input type="time" id="time" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="note">Примітки до замовлення</label>
+                        <textarea id="note" class="form-control" rows="3" placeholder="Наприклад: без цукру, на вівсяному молоці..."></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Надіслати замовлення</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer" id="contacts">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>CoffeeShop</h3>
+                <p>Твій затишний простір якісної кави та свіжої випічки щодня.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Контакти</h3>
+                <p>вул. Університетська, 15</p>
+                <p>+38 (099) 123-45-67</p>
+                <p>info@coffeeshop.ua</p>
+            </div>
+            <div class="footer-col">
+                <h3>Графік роботи</h3>
+                <p>Пн-Пт: 07:30 – 21:00</p>
+                <p>Сб-Нд: 09:00 – 22:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 CoffeeShop</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
